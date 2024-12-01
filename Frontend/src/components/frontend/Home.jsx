@@ -1,33 +1,12 @@
 import React from 'react'
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
 import AboutImg from '../../assets/images/about-us.jpg';
+import Header from '../common/Header';
+import Footer from '../common/Footer';
 
 const Home = () => {
   return (
     <>
-      <header>
-        <div className='container py-3'>
-          <Navbar expand="lg">
-                <Navbar.Brand href="/" className='logo'>
-                  <span>Name </span>
-                 Website
-                </Navbar.Brand>
-                <Navbar.Toggle aria-controls="basic-navbar-nav" />
-                <Navbar.Collapse id="basic-navbar-nav">
-                  <Nav className="ms-auto">
-                    <Nav.Link href="/" className='nav-link'>Home</Nav.Link>
-                    <Nav.Link href="/about"className='nav-link'>Abaut Us</Nav.Link>
-                    <Nav.Link href="/services"className='nav-link'>Services</Nav.Link>
-                    <Nav.Link href="/projects" className='nav-link'>Projects</Nav.Link>
-                    <Nav.Link href="/blogs" className='nav-link'>Blogs</Nav.Link>
-                    <Nav.Link href="/contact" className='nav-link'>Contact Us</Nav.Link>
-                  </Nav>
-                </Navbar.Collapse>
-          </Navbar>
-        </div>
-      </header>
+      <Header />
       <main>
          {/*Hero Section */}
         <section className='section-1'>
@@ -74,22 +53,7 @@ const Home = () => {
             </div>
         </section>
       </main>
-      <footer>
-          <div className='container'>
-              <div className='col-md-3'>
-
-              </div>
-              <div className='col-md-3'>
-
-              </div>
-              <div className='col-md-3'>
-
-              </div>
-              <div className='col-md-3'>
-
-              </div>
-          </div>
-      </footer>
+      <Footer />
     </>
   )
 }
