@@ -26,42 +26,6 @@ p{
     font-size: 1.2em;
 }
 
-header{
-    nav{
-        .nav-link{
-            text-transform: uppercase;
-            color: $text-color;
-            font-size: 1em;
-            font-weight: 500;
-            margin-left: 20px;
-        }
-
-        .logo{
-            text-transform: uppercase;
-            font-size: 1em;
-            font-weight: 500;
-            span{
-                color: $primary-color;
-            }
-        }
-    }
-}
-
-.section-1{
-    .hero{
-        background-image: url('../images/hero.jpg');
-        min-height: 800px;
-
-        color: $text-white;
-
-        span{
-            color: $secondary-color;
-            font-size: 1.5em;
-            font-weight: 500;
-        }
-    }
-}
-
 .btn-primary{
     background-color: $primary-color;
     border: 1px solid $primary-color;
@@ -86,5 +50,57 @@ header{
     &:hover{
         background-color: $primary-color;
         border: 1px solid $primary-color;
+    }
+}
+
+header{
+    nav{
+        .nav-link{
+            text-transform: uppercase;
+            color: $text-color;
+            font-size: 1em;
+            font-weight: 500;
+            margin-left: 20px;
+        }
+
+        .logo{
+            text-transform: uppercase;
+            font-size: 1em;
+            font-weight: 500;
+            span{
+                color: $primary-color;
+            }
+        }
+    }
+}
+
+.footer{
+    
+}
+.section-1{
+    .hero{
+        background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)), url('../images/hero.jpg');
+        min-height: 800px;
+
+        color: $text-white;
+
+        span{
+            color: $secondary-color;
+            font-size: 1.5em;
+            font-weight: 500;
+        }
+    }
+}
+
+.section-2{
+    img{
+        border-radius: 40px;
+    }
+    span{
+        color: $primary-color;
+        font-size: 1.2em;
+        padding-bottom: 10px;
+        text-transform: uppercase;
+        font-weight: 500;
     }
 }
